@@ -1,3 +1,5 @@
+#opinet에서 유가데이터 가져오기
+
 # 1. webdriver를 킨다.
 from selenium import webdriver
 from selenium.webdriver.common.by import By
