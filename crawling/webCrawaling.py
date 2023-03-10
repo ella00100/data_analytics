@@ -1,6 +1,6 @@
 import requests
 import bs4
-import pandas as pd
+import usingPandas as pd
 
 page_url = f"https://finance.naver.com/sise/sise_index_day.naver?code=KPI200&page={1}"
 source = requests.get(page_url).text
