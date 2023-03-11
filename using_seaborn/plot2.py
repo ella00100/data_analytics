@@ -1,5 +1,7 @@
 import plotly_express as px
+import pandas as pd
 
+#histogram
 df = px.data.tips()
 fig = px.histogram(data_frame=df,
                   x="tip",
@@ -12,8 +14,8 @@ df = px.data.tips()
 fig = px.box(df, x="day", y="tip", color="smoker", notched=True)
 fig.show()
 
-import pandas as pd
 
+# gantt chart
 df = pd.DataFrame([
     dict(Task="Job A", Start='2009-01-01', Finish='2009-02-28', Resource="Alex"),
     dict(Task="Job B", Start='2009-03-05', Finish='2009-04-15', Resource="Alex"),
