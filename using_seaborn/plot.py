@@ -6,7 +6,7 @@ penguins = sns.load_dataset("penguins")
 print(penguins)
 
 #line plot
-penguins_line = sns.lineplot(data=penguins, x="body_mass_g",
+sns.lineplot(data=penguins, x="body_mass_g",
              y="flipper_length_mm",
             errorbar=None,
             hue="species")
@@ -50,4 +50,15 @@ sns.scatterplot(data=penguins,
                x="body_mass_g",
                y="flipper_length_mm",
                hue="species")
+
+#heatmap
+penguins.corr()
+sns.heatmap(penguins.corr(),
+           annot=True,
+           cmap="Blues")
+
+
+#pairplot
+sns.pairplot(data=penguins,
+            hue="species")
 
