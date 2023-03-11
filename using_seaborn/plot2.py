@@ -1,7 +1,7 @@
 import plotly_express as px
 import pandas as pd
 
-#histogram
+#histogram"
 df = px.data.tips()
 fig = px.histogram(data_frame=df,
                   x="tip",
