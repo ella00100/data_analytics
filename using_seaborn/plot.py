@@ -17,3 +17,20 @@ sns.pointplot(data=penguins,
              y="body_mass_g",
              hue="sex",
              palette="winter")
+
+#histplot
+sns.histplot(data=penguins, x="bill_depth_mm",
+            bins=30,
+            hue="species",
+            multiple="stack")
+
+#barplot
+sns.barplot(data=penguins,
+           x="island",
+           y="body_mass_g",
+           hue="sex",
+           palette="summer")
+
+#countplot
+sns.countplot(data=penguins,
+             y="sex")
