@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
+import using_seaborn as sns
 
 titanic = pd.read_csv("C:\data/titanic.csv")
 
