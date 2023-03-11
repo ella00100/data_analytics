@@ -34,3 +34,20 @@ sns.barplot(data=penguins,
 #countplot
 sns.countplot(data=penguins,
              y="sex")
+
+#boxplot
+sns.boxplot(data=penguins,
+           x="species",
+           y="body_mass_g")
+
+#swarmplot
+sns.swarmplot(data=penguins,
+             x="sex",
+             y="flipper_length_mm")
+
+#scatterplot
+sns.scatterplot(data=penguins,
+               x="body_mass_g",
+               y="flipper_length_mm",
+               hue="species")
+
