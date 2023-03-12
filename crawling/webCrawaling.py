@@ -1,11 +1,12 @@
 import requests
 import bs4
-import usingPandas as pd
+import pandas as pd
 
 page_url = f"https://finance.naver.com/sise/sise_index_day.naver?code=KPI200&page={1}"
 source = requests.get(page_url).text
 source = bs4.BeautifulSoup(source)
 last_url = source.find_all('td', class_="pgRR")[0].find_all('a')[0]["href"]
+
 last_page = int(last_url.split('&page=')[-1])
 
 date_list = []
