@@ -8,7 +8,7 @@ import warnings
 
 warnings.simplefilter('ignore')
 
-query = '삼성'
+query = '애플'
 titles = []
 prices =[]
 review_counts = []
